@@ -107,7 +107,7 @@ const AboutSection = () => {
                 <GraduationCap className="w-5 h-5 text-primary" />
                 <div>
                   <p className="text-sm text-muted-foreground">Education</p>
-                  <p className="font-medium">Vocational High School - Computer Science</p>
+                  <p className="font-medium">Computer and Network Engineering</p>
                 </div>
               </div>
               <div className="flex items-center gap-3 p-4 rounded-xl bg-card border border-border">
