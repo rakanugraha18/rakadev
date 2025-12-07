@@ -27,7 +27,7 @@ const Index = () => {
           property="og:description"
           content="Portfolio of Raka Nugraha, a Fullstack JavaScript Developer specializing in React, Next.js, Node.js, and modern web technologies."
         />
-        <link rel="canonical" href="https://rakanugraha.dev" />
+        <link rel="canonical" href="https://rakanugrahadev.xyz" />
       </Helmet>
 
       <main className="min-h-screen">
