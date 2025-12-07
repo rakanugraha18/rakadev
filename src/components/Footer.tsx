@@ -14,7 +14,7 @@ const footerLinks = {
     { icon: Github, href: "https://github.com/rakanugraha18", label: "GitHub" },
     { icon: Linkedin, href: "https://linkedin.com/in/rakanugraha", label: "LinkedIn" },
     { icon: Instagram, href: "https://instagram.com/rakajnugraha", label: "Instagram" },
-    { icon: Mail, href: "mailto:raka@example.com", label: "Email" },
+    { icon: Mail, href: "mailto:rakanugraha2@gmail.com", label: "Email" },
   ],
 };
 
