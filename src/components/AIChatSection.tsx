@@ -25,7 +25,7 @@ const AIChatSection = () => {
     {
       id: "1",
       role: "assistant",
-      content: "Halo! Saya adalah AI assistant yang dapat menjawab pertanyaan tentang Raka Nugraha. Silakan tanyakan apa saja tentang skills, pengalaman, atau project yang pernah dikerjakan!",
+      content: "Hello! I am an AI assistant that can answer questions about Raka Nugraha. Feel free to ask anything about his skills, experience, or projects!",
       timestamp: new Date(),
     },
   ]);
@@ -260,7 +260,7 @@ const AIChatSection = () => {
               <Input
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
-                placeholder="Ketik pertanyaan..."
+                placeholder="Type your question..."
                 className="flex-1 text-xs h-8"
                 disabled={isLoading}
               />
