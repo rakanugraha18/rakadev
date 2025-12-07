@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { ArrowDown, Github, Linkedin, Mail, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import cvRaka from "@/assets/CVRAKA.pdf";
 
 const roles = [
   "Fullstack Developer",
@@ -123,7 +124,7 @@ const HeroSection = () => {
               size="lg"
               className="group"
             >
-              <Download className="mr-2 w-4 h-4 group-hover:scale-110 transition-transform" />
+              <Download href={cvRaka} className="mr-2 w-4 h-4 group-hover:scale-110 transition-transform" />
               Download CV
             </Button>
           </div>
