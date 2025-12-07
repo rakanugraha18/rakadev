@@ -14,10 +14,9 @@ interface Message {
 }
 
 const suggestedQuestions = [
-  "Apa keahlian utama Raka?",
-  "Ceritakan pengalaman kerja Raka",
-  "Project apa saja yang pernah dikerjakan?",
-  "Bagaimana cara menghubungi Raka?",
+  "What are Raka’s main skills?",
+  "Tell us about Raka’s work experience.",
+  "What projects has Raka worked on?",
 ];
 
 const AIChatSection = () => {
