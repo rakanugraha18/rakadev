@@ -1,4 +1,4 @@
-import { Code2, Heart, ArrowUp, Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { Code2, Heart, ArrowUp, Github, Linkedin, Mail, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const footerLinks = {
@@ -11,9 +11,9 @@ const footerLinks = {
     { label: "Contact", href: "#contact" },
   ],
   social: [
-    { icon: Github, href: "https://github.com", label: "GitHub" },
-    { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-    { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
+    { icon: Github, href: "https://github.com/rakanugraha18", label: "GitHub" },
+    { icon: Linkedin, href: "https://linkedin.com/in/rakanugraha", label: "LinkedIn" },
+    { icon: Instagram, href: "https://instagram.com/rakajnugraha", label: "Instagram" },
     { icon: Mail, href: "mailto:raka@example.com", label: "Email" },
   ],
 };
