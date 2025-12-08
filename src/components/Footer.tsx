@@ -1,5 +1,6 @@
 import { Code2, Heart, ArrowUp, Github, Linkedin, Mail, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logoRK from "@/assets/logork.png";
 
 const footerLinks = {
   navigation: [
@@ -49,8 +50,8 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <a href="#home" className="flex items-center gap-2 group">
-              <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center transition-transform group-hover:scale-110">
-                <Code2 className="w-6 h-6 text-primary-foreground" />
+              <div className="w-12 h-12 rounded-lg bg-primary flex items-center justify-center transition-transform group-hover:scale-110">
+                <img src={logoRK} alt="Logo" className="w-6 h-6" />
               </div>
               <span className="font-bold text-xl">
                 Raka<span className="text-primary">.</span>
