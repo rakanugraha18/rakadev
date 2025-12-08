@@ -131,13 +131,17 @@ const AIChatSection = () => {
       {/* Floating Chat Window */}
       <div
         className={cn(
-          "fixed bottom-20 right-6 z-40 w-[300px] md:w-[320px] transition-all duration-300 transform",
+          "fixed z-40 transition-all duration-300 transform",
+          // Mobile: Full screen with navbar and button clearance
+          "top-16 bottom-20 left-0 right-0 w-full",
+          // Desktop: Fixed position with max width
+          "md:inset-auto md:bottom-20 md:right-6 md:w-[400px] md:max-w-[400px] md:h-auto md:top-auto md:left-auto",
           isOpen
             ? "opacity-100 translate-y-0 scale-100"
             : "opacity-0 translate-y-4 scale-95 pointer-events-none"
         )}
       >
-        <div className="bg-card border border-border rounded-2xl overflow-hidden shadow-2xl">
+        <div className="bg-card border border-border rounded-2xl md:rounded-2xl rounded-none overflow-hidden shadow-2xl h-full flex flex-col">
           {/* Chat Header */}
           <div className="p-2.5 border-b border-border bg-gradient-to-r from-primary/10 to-primary/5">
             <div className="flex items-center justify-between">
@@ -167,7 +171,7 @@ const AIChatSection = () => {
           </div>
 
           {/* Messages */}
-          <div className="h-[200px] overflow-y-auto p-2.5 space-y-2.5 bg-gradient-to-b from-background to-muted/20">
+          <div className="flex-1 min-h-0 md:h-[300px] md:flex-none overflow-y-auto p-2.5 space-y-2.5 bg-gradient-to-b from-background to-muted/20">
             {messages.map((message) => (
               <div
                 key={message.id}

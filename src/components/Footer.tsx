@@ -50,8 +50,8 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <a href="#home" className="flex items-center gap-2 group">
-              <div className="w-16 h-16 rounded-lg flex items-center justify-center transition-transform group-hover:scale-110">
-                <img src={logoRK} alt="Logo" className="w-6 h-6" />
+              <div className="w-10 h-10 rounded-lg flex items-center justify-center transition-transform group-hover:scale-110">
+                <img src={logoRK} alt="Logo" className="w-8 h-8" />
               </div>
               <span className="font-bold text-xl">
                 Raka<span className="text-primary">.</span>
