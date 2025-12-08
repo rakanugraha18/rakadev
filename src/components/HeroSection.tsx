@@ -47,6 +47,15 @@ const HeroSection = () => {
     }
   };
 
+  const downloadCV = () => {
+    const link = document.createElement("a");
+    link.href = cvRaka;
+    link.download = "CV_Raka_Nugraha.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section
       id="home"
@@ -122,9 +131,10 @@ const HeroSection = () => {
             <Button
               variant="outline"
               size="lg"
+              onClick={downloadCV}
               className="group"
             >
-              <Download href={cvRaka} className="mr-2 w-4 h-4 group-hover:scale-110 transition-transform" />
+              <Download className="mr-2 w-4 h-4 group-hover:scale-110 transition-transform" />
               Download CV
             </Button>
           </div>
@@ -132,7 +142,7 @@ const HeroSection = () => {
           {/* Social Links */}
           <div className="flex items-center justify-center gap-4 animate-fade-in delay-500">
             <a
-              href="https://github.com"
+              href="https://github.com/rakanugraha18"
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 rounded-full bg-card border border-border flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-300 hover:-translate-y-1"
@@ -140,7 +150,7 @@ const HeroSection = () => {
               <Github className="w-5 h-5" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/rakanugraha"
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 rounded-full bg-card border border-border flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-300 hover:-translate-y-1"
@@ -148,7 +158,7 @@ const HeroSection = () => {
               <Linkedin className="w-5 h-5" />
             </a>
             <a
-              href="mailto:raka@example.com"
+              href="mailto:rakanugraha2@gmail.com"
               className="w-12 h-12 rounded-full bg-card border border-border flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-300 hover:-translate-y-1"
             >
               <Mail className="w-5 h-5" />
