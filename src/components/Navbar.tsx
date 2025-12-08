@@ -52,7 +52,7 @@ const Navbar = () => {
     <nav
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        isScrolled
+        isScrolled || isOpen
           ? "bg-card/95 backdrop-blur-md shadow-md"
           : "bg-transparent"
       )}
@@ -119,7 +119,7 @@ const Navbar = () => {
         {/* Mobile Navigation */}
         <div
           className={cn(
-            "md:hidden overflow-hidden transition-all duration-300",
+            "md:hidden overflow-hidden transition-all duration-300 bg-card/98 backdrop-blur-lg rounded-b-lg",
             isOpen ? "max-h-96 pb-4" : "max-h-0"
           )}
         >
